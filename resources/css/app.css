@@ -1,0 +1,25 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.slide-fade-enter-active {
+    transition: all .4s ease;
+}
+.slide-fade-leave-active {
+    transition: all .4s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.input-error {
+    border-color: rgba(248, 113, 113, 1);
+}
